@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background: #f3f9ff;
+  color: #333;
+  line-height: 1.5;
+}
+.grid-layout {
+  display: grid;
+  /*Transforma o elemento em um container de grid*/
+  grid-template-areas:
+  /*Define as áreas nomeadas do grid*/
+    "header"
+    "main"
+    "footer";
+  /* Altura das linhas: cabeçalho ajusta, main ocupa o espaço, footer ajusta */
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh; /* Altura mínima de 100% da tela */
+  gap: 20px; /* Espaçamento entre os elementos do grid */
+  padding: 20px;
+}
+header {
+  grid-area: header; /* Faz o header ocupar a área "header" definida no grid-template-areas */
+  background: #2a9d8f;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+main {
+  grid-area: main; /* Faz o main ocupar a área "main" do grid principal */
+  display: grid; /* Transforma o main em outro grid */
+  grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas iguais (1fr = fração do espaço disponível) */
+  gap: 20px; /* Espaçamento entre as seções */
+}
+
+section {
+  background: #e9c46a;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* efeito de transição */
+}
+section:hover {
+  transform: translateY(-5px); /* levanta o item ao passar o mouse */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* sombra ao passar o mouse */
+}
+section h2 {
+  margin-bottom: 15px;
+  color: #264653;
+}
+.grid-cardapio {
+  display: grid; /* Cada seção (sobremesas, bebidas, comidas) vira um grid */
+  grid-template-columns: 1fr; /* Uma única coluna para listar os itens */
+  gap: 15px; /* Espaçamento entre os itens do cardápio */
+}
+.grid-cardapio .item {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.grid-cardapio .item:hover {
+  transform: scale(1.05); /* Aumenta levemente o tamanho do item */
+  background: #f4a261; /* Muda a cor de fundo ao passar o mouse */
+  cursor: pointer;
+}
+footer {
+  grid-area: footer;
+  /* Faz o footer ocupar a área "footer" definida no grid principal */
+  background: #2a9d8f;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
