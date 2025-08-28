@@ -17,7 +17,7 @@ O objetivo é demonstrar como estruturar um **cardápio digital** simples, organ
 ## Estrutura do Projeto  
 
 - **index.html**: contém a estrutura do cardápio (header, main, footer).  
-- **style.css**: contém o estilo visual, incluindo o uso de **Grid**.  
+- **styles.css**: contém o estilo visual, incluindo o uso de **Grid**.  
 - **README.md**: explicação do projeto (este arquivo).  
 
 ## Funcionalidades  
