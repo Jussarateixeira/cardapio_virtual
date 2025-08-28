@@ -1,7 +1,7 @@
 # Exemplo de Projeto com CSS Grid  
 
 Este projeto foi desenvolvido como **material didático** para uma aula prática de **CSS Grid Layout**.  
-O objetivo é demonstrar como estruturar um **cardápio digital** simples, organizado em três colunas (Comidas,Bebidas e Sobremesas), aplicando **conceitos básicos e intermediários de Grid**.  
+O objetivo é demonstrar como estruturar um **cardápio digital** simples, organizado em três colunas (Comidas, Bebidas e Sobremesas), aplicando conceitos básicos de Grid.  
 
 ## Objetivos do Projeto  
 
@@ -12,13 +12,13 @@ O objetivo é demonstrar como estruturar um **cardápio digital** simples, organ
   - `grid-template-columns`  
   - `gap`  
 - Criar um layout responsivo e organizado.  
-- Adicionar **transições e efeitos visuais** com `hover` e `transition`.  
+- Adicionar transições e efeitos visuais com `hover` e `transition`.  
 
 ## Estrutura do Projeto  
 
-- **index.html** → contém a estrutura do cardápio (header, main, footer).  
-- **style.css** → contém o estilo visual, incluindo o uso de **Grid**.  
-- **README.md** → explicação do projeto (este arquivo).  
+- **index.html**: contém a estrutura do cardápio (header, main, footer).  
+- **style.css**: contém o estilo visual, incluindo o uso de **Grid**.  
+- **README.md**: explicação do projeto (este arquivo).  
 
 ## Funcionalidades  
 
